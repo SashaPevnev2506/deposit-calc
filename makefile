@@ -39,8 +39,7 @@ $(TEST_OBJ_DIR)/deposit_test.o: test/deposit_test.c
 $(TEST_OBJ_DIR)/validation_test.o: test/validation_test.c
 	$(CC) $(TEST_FLAGS) -c test/validation_test.c -o $(TEST_OBJ_DIR)/validation_test.o
 
-.c.o:
-	$(CC) $(CFLAGS) $< -o $@
+
 
 clean:
 	rm -rf build/ bin/

@@ -49,3 +49,10 @@ CTEST(MoreBlockTests, goodDataPass115)
     const int expected = 229999;
     ASSERT_EQUAL(expected, result);
 }
+
+CTEST(FailTests, failTest01)
+{
+    const int result = perform(122, 1000);
+    const int expected = 1020;
+    ASSERT_EQUAL(expected, result);
+    }
